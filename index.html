@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="color-white">
+            <div class="logo-container">
+                <img class="logo-container__logo" src="assets/Boho-kids-brown.svg" alt="Boho Kids Logo">
+            </div>
+            <ul class="nav-btns-container">
+                <li class="text-brown">About</li>
+                <li class="text-brown">Account</li>
+                <li class="text-brown">Cart</li>
+            </ul>
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
+        </nav>
+        <section class="hero color-brown">
+            <h2 class="hero__area text-light">Kids Furniture Sale</h2>
+            <div class="countdown hero__area">
+                <h1 class="big text-light" id="hours">00</h1>
+                <h1 class="big text-light" id="minutes">00</h1>
+                <h1 class="big text-light" id="seconds">00</h1>
+                <h5 class="countdown__label text-tan">Hours</h3>
+                <h5 class="countdown__label text-tan">Minutes</h3>
+                <h5 class="countdown__label text-tan">Seconds</h3>
+            </div>
+            <div class="hero__area btn-container">
+                <button class="hero__button button-white" onclick="document.querySelector('.carousel').scrollIntoView({ behavior: 'smooth'});">Shop Now</button>
+            </div>
+            <p class="hero__area text-tan">Transform your child's room with our exclusive discounts on stylish and safe furniture. Shop now and create the perfect space for your little ones!</p>
+        </section>
+        <section class="carousel">
+            <button class="carousel__controls carousel__controls--left button-outline-yellow"  onclick="carouselButton('left')">
+                <
+            </button>
+            <div class="carousel__window">
+                <div class="carousel__cards-container">
+                    <div class="card current-card">
+                        <img src="assets/Product-1.jpeg" alt="Product 1">
+                        <div class="card__content">
+                            <div class="card__content-price">
+                                <h2 class="text-yellow">$5.00</h2>
+                                <s>$10.00</s>
+                            </div>
+                            <h4>Dreamland Canopy Bed</h4>
+                            <p>Turn bedtime into a fairytale with the Dreamland Canopy Bed. Featuring a whimsical canopy and sturdy frame, this enchanting bed offers both comfort and style, making every night a magical adventure.</p>
+                        </div>
+                        <button class="button-yellow">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Product-6.jpeg" alt="Product 1">
+                        <div class="card__content">
+                            <div class="card__content-price">
+                                <h2 class="text-yellow">$5.00</h2>
+                                <s>$10.00</s>
+                            </div>
+                            <h4>Adventure Loft Bunk</h4>
+                            <p>The Adventure Loft Bunk is perfect for small spaces and big imaginations. With a built-in desk, storage shelves, and a cozy sleeping area, it combines fun and functionality, inspiring endless creativity and play.</p>
+                        </div>
+                        <button class="button-yellow">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Product-3.jpeg" alt="Product 1">
+                        <div class="card__content">
+                            <div class="card__content-price">
+                                <h2 class="text-yellow">$5.00</h2>
+                                <s>$10.00</s>
+                            </div>
+                            <h4>Cozy Corner Reading Nook</h4>
+                            <p>Create a perfect spot for your little one to dive into their favorite books with the Cozy Corner Reading Nook. This charming piece features plush seating, built-in shelves, and a calming design, encouraging a lifelong love of reading.</p>
+                        </div>
+                        <button class="button-yellow">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Product-4.jpeg" alt="Product 1">
+                        <div class="card__content">
+                            <div class="card__content-price">
+                                <h2 class="text-yellow">$5.00</h2>
+                                <s>$10.00</s>
+                            </div>
+                            <h4>Playful Pixie Table Set</h4>
+                            <p>The Playful Pixie Table Set includes a vibrant table and matching chairs, ideal for arts and crafts, tea parties, and homework. Its durable, child-friendly design makes it a delightful and practical addition to any playroom.</p>
+                        </div>
+                        <button class="button-yellow">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Product-5.jpeg" alt="Product 1">
+                        <div class="card__content">
+                            <div class="card__content-price">
+                                <h2 class="text-yellow">$5.00</h2>
+                                <s>$10.00</s>
+                            </div>
+                            <h4>Jungle Safari Toy Chest</h4>
+                            <p>Keep the playroom tidy with the Jungle Safari Toy Chest. Decorated with fun jungle animal motifs, this spacious chest provides ample storage for toys, books, and games, making clean-up time an exciting adventure.</p>
+                        </div>
+                        <button class="button-yellow">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel__controls carousel__controls--right button-outline-yellow" onclick="carouselButton('right')">
+                >
+            </button>
+
+            <div class="carousel__indicators-container">
+                <div class="carousel__indicator carousel__indicator--selected"></div>
+                <div class="carousel__indicator"></div>
+                <div class="carousel__indicator"></div>
+                <div class="carousel__indicator"></div>
+                <div class="carousel__indicator"></div>
+            </div>
+            
+        </section>
+        <footer class="color-tan">
+            <div class="logo-container">
+                <img class="logo-container__logo" src="assets/Boho-kids-brown.svg">
+            </div>
+        </footer>
+        <script src="carousel.js"></script>
+        <script src="countdown.js"></script>
+    </body>
+</html>
